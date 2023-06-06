@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="creaditCardInputContainer">
+            <label for=""> Card Number <input type="text" name="number" id="vnumber"
+                    oninput="onValue('vnumber','number')"></label>
+            <label for=""> Holder <input type="text" name="holder" id="vholder"
+                    oninput="onValue('vholder','holder')"></label>
+            <div>
+                <label for=""> Valid-Thru <input type="text" name="valid" id="vvalid"
+                        oninput="onValue('vvalid','valid')"></label>
+                <label for=""> CVV <input type="text" name="cvv" id="vcvv" oninput="onValue('vcvv','cvv')"></label>
+            </div>
+            <button>Add</button>
+        </form>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93158.png" alt="">
+
+            <p id="number">1234 5678 9121 1010</p>
+            <label for="">
+                Holder
+                <p id="holder">Osman Horasan</p>
+            </label>
+            <div>
+                <label for="">
+                    Valid-Thru
+                    <p id="valid">02/40</p>
+                </label>
+                <label for="">
+                    Cvv
+                    <p id="cvv">145</p>
+                </label>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/6404/6404078.png" alt="" srcset="">
+        </div>
+    </div>
+</body>
+
+</html>
